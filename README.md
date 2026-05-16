@@ -697,5 +697,3 @@ MIT — free for personal and commercial use. Attribution appreciated but not re
 ---
 
 *Built by [Lukáš Pištěk](https://github.com/covenant666)*
-*Battle-tested in production on [theforgewrite.com](https://theforgewrite.com)*
-*Part of The Forge security layer*
