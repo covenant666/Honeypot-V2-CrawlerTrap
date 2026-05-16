@@ -1,0 +1,48 @@
+{
+  "name": "honeypot-v2",
+  "version": "1.0.0",
+  "description": "Behavioral honeypot for web applications — graduated response from passive observation to active tarpitting. Zero external dependencies in memory mode. Optional Upstash Redis for production persistence.",
+  "keywords": [
+    "honeypot",
+    "security",
+    "bot-detection",
+    "rate-limiting",
+    "tarpit",
+    "scraping-protection",
+    "middleware",
+    "nextjs",
+    "express"
+  ],
+  "license": "MIT",
+  "author": "Lukáš Pištěk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USER/honeypot-v2"
+  },
+  "main": "./src/orchestrator.ts",
+  "types": "./src/types.ts",
+  "exports": {
+    ".": "./src/orchestrator.ts",
+    "./scoring": "./src/scoring.ts",
+    "./bait": "./src/bait.ts",
+    "./tarpit": "./src/tarpit.ts",
+    "./types": "./src/types.ts"
+  },
+  "files": [
+    "src/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
